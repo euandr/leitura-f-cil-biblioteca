@@ -155,7 +155,10 @@ const BookDetails = () => {
               
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="flex-1 h-12 accent-gradient text-primary-foreground font-medium hover:opacity-90 transition-opacity gap-2">
+                <Button 
+                  className="flex-1 h-12 accent-gradient text-primary-foreground font-medium hover:opacity-90 transition-opacity gap-2"
+                  onClick={() => window.open('/books/sample-book.pdf', '_blank')}
+                >
                   <BookOpen className="w-5 h-5" />
                   Ler Online
                 </Button>
