@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import SearchBar from "@/components/SearchBar";
+import Categories from "@/components/Categories";
 import BookGrid from "@/components/BookGrid";
 import Footer from "@/components/Footer";
 
@@ -11,6 +12,7 @@ const Index = () => {
       <main className="flex-1">
         <HeroBanner />
         <SearchBar />
+        <Categories />
         <BookGrid />
       </main>
       <Footer />

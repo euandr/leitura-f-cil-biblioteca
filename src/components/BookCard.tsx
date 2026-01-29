@@ -1,14 +1,14 @@
-import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface BookCardProps {
+  id: number;
   cover: string;
   title: string;
   author: string;
-  onViewMore?: () => void;
 }
 
-const BookCard = ({ cover, title, author, onViewMore }: BookCardProps) => {
+const BookCard = ({ id, cover, title, author }: BookCardProps) => {
   return (
     <div className="group card-gradient rounded-xl overflow-hidden border border-border transition-all duration-300 hover:border-primary/30 hover:shadow-[var(--shadow-card-hover)]">
       {/* Book Cover */}
@@ -29,15 +29,15 @@ const BookCard = ({ cover, title, author, onViewMore }: BookCardProps) => {
         <p className="text-sm text-muted-foreground mb-4">
           {author}
         </p>
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="w-full gap-2 border-border hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
-          onClick={onViewMore}
-        >
-          <Eye className="w-4 h-4" />
-          Ver mais
-        </Button>
+        <Link to={`/livro/${id}`}>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="w-full border-border hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+          >
+            Ver mais
+          </Button>
+        </Link>
       </div>
     </div>
   );
