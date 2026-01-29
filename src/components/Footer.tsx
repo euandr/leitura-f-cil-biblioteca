@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Créditos */}
             <p className="text-sm text-muted-foreground flex items-center gap-1">
-              Feito com <Heart className="w-4 h-4 text-primary" /> por Andre Alvino
+              Feito por Andre Alvino
             </p>
 
             {/* Redes e Ano */}
@@ -86,7 +86,7 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
               >
                 <Github className="w-5 h-5" />
-                <span className="text-sm">@euandr</span>
+                
               </a>
               <span className="text-sm text-muted-foreground">© 2025</span>
             </div>
