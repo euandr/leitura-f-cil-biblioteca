@@ -73,10 +73,10 @@ const BookGrid = () => {
             style={{ animationDelay: `${0.1 * index}s` }}
           >
             <BookCard
+              id={book.id}
               cover={book.cover}
               title={book.title}
               author={book.author}
-              onViewMore={() => console.log(`Ver mais: ${book.title}`)}
             />
           </div>
         ))}

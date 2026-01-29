@@ -11,25 +11,9 @@ const Footer = () => {
             <span className="font-medium text-foreground">Leitura Fácil</span>
           </div>
 
-          {/* Links */}
-          <nav className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Sobre
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contato
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Termos
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Privacidade
-            </a>
-          </nav>
-
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Feito com <Heart className="w-4 h-4 text-primary" /> © 2024
+            Feito com <Heart className="w-4 h-4 text-primary" /> por Andre Alvino © 2025
           </p>
         </div>
       </div>
